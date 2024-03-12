@@ -2,13 +2,18 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-def envio_notificacion(moneda: str, precio: int, cantidades: int):
+def envio_notificacion(moneda: str, precio: int, cantidades: int, tipo: str):
 
    # Iniciamos los parámetros del script
    remitente = 'ymc20250@gmail.com'
    destinatarios = ['yonihermelendez@gmail.com']
-   asunto = f'Es hora de vender {moneda}'
-   cuerpo = f'Hola Yoniher! Es hora de vender {moneda}, tiene un precio actual de: {precio}. La venta seria de: {cantidades} modenas.'
+
+   if tipo == 'venta':
+      asunto = f'Es hora de vender {moneda}'
+      cuerpo = f'Hola Yoniher! Es hora de vender {moneda}, tiene un precio actual de: {precio}. La venta seria de: {cantidades} modenas.'
+   elif tipo == 'compra':
+      asunto = f'Es hora de comprar {moneda}'
+      cuerpo = f'Hola Yoniher! Es hora de comprar {moneda}, tiene un precio actual de: {precio}.'
 
    # Creamos el objeto mensaje
    mensaje = MIMEMultipart()
