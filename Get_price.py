@@ -73,6 +73,7 @@ for monedas in criptos.items():
    if monedas[0] == 'RNDR':
       for valor in monedas[1].items():
          analisis_precio(valor[1],14.47,'RNDR','venta') 
+         analisis_precio(valor[1],9.24,'RNDR','compra') 
 
 ## SOL ###############################################################
    if monedas[0] == 'SOL':
@@ -83,6 +84,7 @@ for monedas in criptos.items():
    if monedas[0] == 'BNB':
       for valor in monedas[1].items():
          analisis_precio(valor[1],649,'BNB','venta') 
+         analisis_precio(valor[1],529,'BNB','compra') 
 
 ## CRO ###############################################################
    if monedas[0] == 'CRO':
@@ -103,6 +105,7 @@ for monedas in criptos.items():
    if monedas[0] == 'FET':
       for valor in monedas[1].items():
          analisis_precio(valor[1],4.86,'FET','venta')
+         analisis_precio(valor[1],1.99,'FET','compra')
 
 ## XAI ###############################################################
    if monedas[0] == 'XAI':
@@ -133,6 +136,7 @@ for monedas in criptos.items():
    if monedas[0] == 'AGIX':
       for valor in monedas[1].items():
          analisis_precio(valor[1],2.1,'AGIX','venta')
+         analisis_precio(valor[1],0.9213,'AGIX','compra')
 
 ## ALI ###############################################################
    if monedas[0] == 'ALI':
@@ -148,6 +152,7 @@ for monedas in criptos.items():
    if monedas[0] == 'GRT':
       for valor in monedas[1].items():
          analisis_precio(valor[1],0.52,'GRT','venta')
+         analisis_precio(valor[1],0.27,'GRT','compra')
 
 ## MAN ###############################################################
    if monedas[0] == 'MAN':
@@ -168,3 +173,4 @@ for monedas in criptos.items():
    if monedas[0] == 'CGPT':
       for valor in monedas[1].items():
          analisis_precio(valor[1],0.63,'CGPT','venta')
+         analisis_precio(valor[1],0.3118,'CGPT','compra')
